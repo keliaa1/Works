@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        align-items: center;
+        justify-content: center;
+      }
+      .form-container{
+        text-align: center;
+      }
+      .form-container input
+      .form-container input[type="text"],
+      .form-container input[type="email"],
+      .form-container input[type="password"]{
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+      }
+    </style>
+</head>
+<body>
+  <div class="form-container">
+    <fieldset>
+    <h1 style="color: brown;">Personal information form:</h1>
+    <form action="http://localhost/form.php" method="POST">
+  
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+      <br><br>
+  
+ 
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <br><br>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" required>
+      <br><br>
+      <label for="age" name="age">Age:</label>
+      <input type="number" id="age" name="age" placeholder="age" min="18" max="99" required>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <br><br>
+
+      <label>Interests:</label><br><br>
+      <input type="checkbox" id="reading" name="interests" value="reading">
+      <label for="reading">Reading</label><br>
+      <input type="checkbox" id="traveling" name="interests" value="traveling">
+      <label for="traveling">Traveling</label><br>
+      <input type="checkbox" id="gaming" name="interests" value="gaming">
+      <label for="gaming">Gaming</label><br>
+      <input type="checkbox" id="sports" name="interest" value="sports">
+      <label for="sports">Sports</label><br>
+      <br><br>
+      <label for="favColor">Choose your favorite color:</label>
+      <input type="color" id="favColor" name="favColor" value="#ff0000"><br><br>
+  
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="" disabled selected>Choose your country</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Rwanda">Rwanda</option>
+      </select>
+      <br><br>
+  
+      <button type="submit">Sign Up</button>
+    </form>
+  </fieldset>
+  </div>
+  </body>
+
+  </html>
+</html>
